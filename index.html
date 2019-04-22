@@ -6,7 +6,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+
+       
         <script>
         	$(function(){
         		$.ajax({
@@ -33,9 +35,9 @@
             }
         </script>
     </head>
-    <body>
-        <table class="table table-striped">
-            <thead  class="thead-dark">
+    <body>      
+          <table BORDER=2 class="display">
+		  <thead>
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Nome</th>
@@ -44,7 +46,7 @@
                 <th scope="col">Ações</th>
                 <th scope="col"><a href="/cadastro.php"> <button type='button' class='btn btn-outline-success btn-sm'>Cadastrar</button></a></th>
               </tr>
-            </thead>            
+          </thead>
             <tbody id="tabela">                         
             </tbody>
           </table>
